@@ -8,7 +8,7 @@ Usage
 
 Example usage:
 
-```
+```shell
 # to create a new heroku app with this buildpack
 $ heroku create --stack cedar --buildpack https://github.com/electricobjects/heroku-buildpack-geoip.git
 
