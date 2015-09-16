@@ -31,5 +31,5 @@ cd -
 echo "-----> Exporting PATH and LIBRARY_PATH"
 PROFILE_PATH="$BUILD_DIR/.profile.d/geoip.sh"
 mkdir -p $(dirname $PROFILE_PATH)
-echo 'export PATH="$PATH:/app/vendor/geoip/bin"' >> $PROFILE_PATH
-echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/app/vendor/geoip/lib"' >> $PROFILE_PATH
+echo 'export PATH="$PATH:/app/vendor/geoip/bin:/app/vendor/geoip/include"' >> $PROFILE_PATH
+echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:vendor/geoip/lib"' >> $PROFILE_PATH
