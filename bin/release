@@ -2,10 +2,10 @@
 
 cat << EOF
 ---
-addons:
-  - shared-database:5mb
 config_vars:
-  PATH: bin:/usr/bin:/bin
+  PATH: bin:/usr/bin:/bin:/app/vendor/geoip/bin
+  LD_LIBRARY_PATH: lib/:usr/local/lib:/usr/lib:/lib:/app/vendor/geoip/lib
 default_process_types:
-  hello: cat hello.txt
+  console: "vendor/geoip/bin/geoiplookup"
+  console: "vendor/geoip/bin/geoiplookup6"
 EOF
