@@ -6,6 +6,7 @@ config_vars:
   PATH: bin:/usr/bin:/bin:/app/vendor/geoip/bin:/app/vendor/geoip/include
   LD_LIBRARY_PATH: lib/:usr/local/lib:/usr/lib:/lib:/app/vendor/geoip/lib
   LIBRARY_PATH: /app/vendor/geoip/lib
+  CPATH: /app/vendor/geoip/include
 default_process_types:
   console: "/app/vendor/geoip/bin/geoiplookup"
   console: "/app/vendor/geoip/bin/geoiplookup6"
