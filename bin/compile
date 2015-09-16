@@ -34,4 +34,5 @@ mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$PATH:/app/vendor/geoip/bin:/app/vendor/geoip/include"' >> $PROFILE_PATH
 echo 'export LD_LIBRARY_PATH="/app/vendor/geoip/lib"' >> $PROFILE_PATH
 echo 'export LIBRARY_PATH="/app/vendor/geoip/lib"' >> $PROFILE_PATH
-echo 'export CPATH="/app/vendor/geoip/include"' >> $PROFILE_PATH
+echo 'export CPATH="/app/vendor/geoip/include:/app/vendor/geoip/lib"' >> $PROFILE_PATH
+echo 'export C_INCLUDE_PATH="/app/vendor/geoip/include:/app/vendor/geoip/lib"' >> $PROFILE_PATH
