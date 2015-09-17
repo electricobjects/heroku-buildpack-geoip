@@ -1,8 +1,5 @@
 #!/bin/sh
+LOCATION=/app/vendor/geoip
 
-export PATH=$PATH:/app/vendor/geoip/bin:/app/vendor/geoip/include
-export LD_LIBRARY_PATH=/app/vendor/geoip/lib
-export LIBRARY_PATH=/app/vendor/geoip/lib
-export CPATH=/app/vendor/geoip/include:/app/vendor/geoip/lib
-export C_INCLUDE_PATH=/app/vendor/geoip/include:/app/vendor/geoip/lib
-
+export LIBRARY_PATH=$LOCATION/lib:\$LIBRARY_PATH
+export C_INCLUDE_PATH=$LOCATION/include:$LOCATION/lib:\$C_INCLUDE_PATH
