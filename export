@@ -1,12 +1,11 @@
 #!/bin/sh
 
-echo "-----> EXPORT FILE RUNNING"
-
 LOCATION=/app/vendor/geoip
 export LIBRARY_PATH=$LOCATION/lib:$LIBRARY_PATH
-export C_INCLUDE_PATH=$LOCATION/include:$C_INCLUDE_PATH
-export CPATH=$LOCATION/include:$CPATH
-export PATH=$PATH:$LOCATION/bin
 export LD_LIBRARY_PATH=$LOCATION/lib:$LD_LIBRARY_PATH
+export C_INCLUDE_PATH=$LOCATION/include:$LOCATION/lib:$C_INCLUDE_PATH
+export CPATH=$LOCATION/include:$LOCATION/lib:$CPATH
+export PATH=$PATH:$LOCATION/bin
 
 echo "C_INCLUDE_PATH is ${C_INCLUDE_PATH}" 
+echo "CPATH is ${CPATH}" 
