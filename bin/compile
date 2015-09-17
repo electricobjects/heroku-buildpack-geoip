@@ -29,12 +29,6 @@ make install
 cd -
 
 echo "-----> Exporting PATH and LIBRARY_PATH"
-export PATH=$PATH:/app/vendor/geoip/bin:/app/vendor/geoip/include
-export LD_LIBRARY_PATH=/app/vendor/geoip/lib
-export LIBRARY_PATH=/app/vendor/geoip/lib
-export CPATH=/app/vendor/geoip/include:/app/vendor/geoip/lib
-export C_INCLUDE_PATH=/app/vendor/geoip/include:/app/vendor/geoip/lib
-
 PROFILE_PATH="$BUILD_DIR/.profile.d/geoip.sh"
 mkdir -p $(dirname $PROFILE_PATH)
 echo 'export PATH="$PATH:/app/vendor/geoip/bin:/app/vendor/geoip/include"' >> $PROFILE_PATH
